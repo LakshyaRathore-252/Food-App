@@ -9,7 +9,7 @@ import userRouter from './routes/userRoutes.js';
 
 // App Config
 const app = express();
-const PORT = 4000;
+const PORT = 4000 || process.env.PORT;
 
 
 // Middlewares

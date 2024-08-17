@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  "build": "vite build",
   "scripts": {
     "server": "nodemon server.js"
   },

@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // Controller function to handle placing an order
 export const placeOrder = async (req, res) => {
 
-    const frontendUrl = "http://localhost:3000";  // Frontend URL for redirection after payment
+    const frontendUrl = process.env.FRONTENED_URL;  // Frontend URL for redirection after payment
 
     try {
         // Create a new order document using the orderModel schema
